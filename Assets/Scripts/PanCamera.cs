@@ -16,7 +16,7 @@ public class PanCamera : MonoBehaviour
     //this function updates our guitext object
     void OnGUI()
     {
-        gui.GetComponent<TextMeshProUGUI>().text = "Score: " + ((int)(playerScore * 5)).ToString();
+        gui.GetComponent<TextMeshProUGUI>().text = "Score: " + ((int)(playerScore)).ToString();
     }
 
     //this is generic function we can call to increase the score by an amount
@@ -52,5 +52,7 @@ public class PanCamera : MonoBehaviour
                 transform.position = new Vector3(transform.position.x + 0.03f, transform.position.y + ydir,-10);
             }
         }
+
+
     }
 }
