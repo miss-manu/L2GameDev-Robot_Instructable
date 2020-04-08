@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PanCamera : MonoBehaviour
+public class pancam : MonoBehaviour
 {
     float ydir = 0f;
     float randy = 0f;
@@ -11,7 +11,12 @@ public class PanCamera : MonoBehaviour
 
     //for our GUIText object and our score
     public TextMeshProUGUI gui;
-    float playerScore = 0;
+    public static float playerScore;
+
+    private void Start()
+    {
+        playerScore = 0;
+    }
 
     //this function updates our guitext object
     void OnGUI()
@@ -25,6 +30,12 @@ public class PanCamera : MonoBehaviour
         playerScore += amount;
     }
 
+    //this will disable the camera when we load a level, and set the score in player prefs 
+    private void OnDisable()
+    {
+        PlayerPrefs.SetInt("Score", (int)(playerScore));
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -35,6 +46,7 @@ public class PanCamera : MonoBehaviour
             if (Player.transform.position.x > -1)
             {
                 playerScore += Time.deltaTime;          //update our score every tick of the clock
+
                 randy = Random.Range(0f, 100f);
 
                 if (randy < 20)

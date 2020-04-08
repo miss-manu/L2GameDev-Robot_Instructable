@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BonusPoints : MonoBehaviour
 {
-    private PanCamera powerup;                   // Make container for Heads Up Display
+    private pancam powerup;                   // Make container for Heads Up Display
     //public RobotController robot;           // Find the robot object
 
     private void Start()
     {
-        powerup = FindObjectOfType<PanCamera>();
+        powerup = FindObjectOfType<pancam>();
         //robot = FindObjectOfType<RobotController>();
     }
 

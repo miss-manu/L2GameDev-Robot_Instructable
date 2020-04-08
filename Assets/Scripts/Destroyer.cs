@@ -1,25 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Destroyer : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collider2D)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         //If the object that triggered the event, is tagged player
-        if (collider2D.tag == "Player")
+        if (other.tag == "Player")
         {
-            Debug.Break();
-            return;
+            SceneManager.LoadScene("GameOver");
         }
 
-        if (collider2D.gameObject.transform.parent)
+        if (other.gameObject.transform.parent)
         {
-            Destroy(collider2D.gameObject.transform.parent.gameObject);
+            Destroy(other.gameObject.transform.parent.gameObject);
         }
         else
         {
-            Destroy(collider2D.gameObject);
+            Destroy(other.gameObject);
         }
     }
 }
