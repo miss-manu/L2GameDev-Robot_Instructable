@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class pancam : MonoBehaviour
+public class PanCamera : MonoBehaviour
 {
     float ydir = 0f;
     float randy = 0f;
@@ -11,17 +11,12 @@ public class pancam : MonoBehaviour
 
     //for our GUIText object and our score
     public TextMeshProUGUI gui;
-    public static float playerScore;
-
-    private void Start()
-    {
-        playerScore = 0;
-    }
+    float playerScore = 0;
 
     //this function updates our guitext object
     void OnGUI()
     {
-        gui.GetComponent<TextMeshProUGUI>().text = "Score: " + ((int)(playerScore)).ToString();
+        gui.GetComponent<TextMeshProUGUI>().text = "Score: " + ((int)(playerScore * 5)).ToString();
     }
 
     //this is generic function we can call to increase the score by an amount
@@ -64,7 +59,5 @@ public class pancam : MonoBehaviour
                 transform.position = new Vector3(transform.position.x + 0.03f, transform.position.y + ydir,-10);
             }
         }
-
-
     }
 }

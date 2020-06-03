@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6736749395653066652}
   - component: {fileID: 1407025790761556920}
   - component: {fileID: 7245152556619940689}
-  m_Layer: 8
-  m_Name: doodlesbig4
+  m_Layer: 0
+  m_Name: doodlesbig copy_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -125,7 +125,7 @@ GameObject:
   m_Layer: 0
   m_Name: BombSpawn (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -473,10 +473,10 @@ GameObject:
   m_Component:
   - component: {fileID: 837603483}
   - component: {fileID: 837603484}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: DoodleSpawn
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -527,7 +527,7 @@ GameObject:
   m_Layer: 8
   m_Name: BonusSpawn
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -558,12 +558,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj:
-  - {fileID: 2243034371174599639, guid: faabdb671fc64864ea67690f763f860e, type: 3}
-  - {fileID: 270364317283063826, guid: 43e579129bac11241b564fe4cec65de8, type: 3}
-  - {fileID: 5671610748154175383, guid: 7760e8676b0bcc9419e8ce619907d9d9, type: 3}
-  - {fileID: 2666302785386985923, guid: 8f9b6f58cc5c0614d9396824c78f7f82, type: 3}
-  - {fileID: 6257961946917831550, guid: 606b7368757be204c8508c3f22ff3a0c, type: 3}
-  - {fileID: 2147103510546609629, guid: 7751fe17c1a909a4387cccedc9c0d7b5, type: 3}
+  - {fileID: 4150957606525894393, guid: 09287263cd19ab14295fafd3a42094b9, type: 3}
+  - {fileID: 1021809550094365594, guid: ec43606709d33434d9ad1f7f71104bd8, type: 3}
+  - {fileID: 4433129536450240470, guid: 99b930a9eac31ed47ba6fd57f15ae756, type: 3}
+  - {fileID: 4769673709351602395, guid: 9734f55fd7b68824a8314a1910c797af, type: 3}
+  - {fileID: 4456166566924271591, guid: af3b540508b63364abbc937f6b4dbc9a, type: 3}
+  - {fileID: 413655909445162611, guid: 77443744e180d4d47972880b9fb829ba, type: 3}
   spawnMin: 3
   spawnMax: 2
 --- !u!1 &971636758
@@ -771,8 +771,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2096064109
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 95500e975b9d9f748906413253f223f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1188,10 +1188,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1847293768}
   - component: {fileID: 1847293769}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: DoodleSpawn (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1371,7 +1371,7 @@ Transform:
   m_GameObject: {fileID: 1894933904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.06, y: 0.35, z: 0.18815103}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2138130379}
   m_Father: {fileID: 0}
@@ -1428,7 +1428,7 @@ GameObject:
   m_Layer: 8
   m_Name: PencilTip
   m_TagString: Hand
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1472,7 +1472,7 @@ GameObject:
   m_Layer: 0
   m_Name: BombSpawn
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1518,7 +1518,7 @@ GameObject:
   m_Layer: 0
   m_Name: groundCheckPoint
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1530,7 +1530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138130378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -1.044, z: -0.08463541}
+  m_LocalPosition: {x: -0, y: -1.14, z: -0.08463541}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1894933909}

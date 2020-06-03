@@ -32,7 +32,7 @@ public class RobotController : MonoBehaviour
         isTouchingGround = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
         move = Input.GetAxis("Horizontal");         //Gives a value of (up to) 1/-1, if player is being moved left or right
 
-        if (move > 0f) // Player is moving left
+        if (move > 0f) // Check if player is moving left
         {
             //move the players rigid body
             myRigidbody.velocity = new Vector2(move * maxSpeed, myRigidbody.velocity.y);
@@ -41,7 +41,7 @@ public class RobotController : MonoBehaviour
                 Flip();         
             }
         }
-        else if (move < 0f) // Player is moving right
+        else if (move < 0f) // Or of Player is moving right
         {
             myRigidbody.velocity = new Vector2(move * maxSpeed, myRigidbody.velocity.y);
             if (facingLeft)
@@ -57,9 +57,9 @@ public class RobotController : MonoBehaviour
         }
 
         //set parameters to animate the Robot
-        anim.SetFloat("Speed", Mathf.Abs(move));
-        anim.SetFloat("vSpeed", myRigidbody.velocity.y);
-        anim.SetBool("Ground", isTouchingGround);
+        anim.SetFloat("Speed", Mathf.Abs(move));                // Robot drive
+        anim.SetFloat("vSpeed", myRigidbody.velocity.y);        // Robot jump
+        anim.SetBool("Ground", isTouchingGround);               // Robot idle
 
     }
 

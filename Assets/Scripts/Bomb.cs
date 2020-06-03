@@ -26,7 +26,7 @@ public class Bomb : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
-        
+
         //if we are done exploding
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Bomb_Dead"))
         {
@@ -45,4 +45,14 @@ public class Bomb : MonoBehaviour
 
         }
     }
+
+    //Include a script that if the player is too close when the bomb explodes, the game should end
+    /*private void OnTriggerEnter2D(Collider2D other)
+    {
+        //If the object that triggered the event, is tagged player
+        if (other.tag == "Player")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }*/
 }

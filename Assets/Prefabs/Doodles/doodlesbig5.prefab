@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3370679377757513339}
   - component: {fileID: 6934541120343179871}
   - component: {fileID: 1671188636354910902}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: doodlesbig5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
